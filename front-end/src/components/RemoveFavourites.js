@@ -1,9 +1,12 @@
 import React from 'react';
 
-const RemoveFavourites = () => {
+const RemoveFavourites = (props) => {
+    const movie = props.movie
+
     return (
         <>
-            <span className='mr-2'>Remove from favourites</span>
+            <span className='mr-2'>{movie.userHighLevelRating} - {movie.userRating}</span>
+            <span className='m-2'></span>
             <svg
                 width='1em'
                 height='1em'
