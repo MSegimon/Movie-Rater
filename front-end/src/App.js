@@ -4,8 +4,6 @@ import './App.css';
 import MovieList from './components/MovieList';
 import MovieListHeading from './components/MovieListHeading';
 import SearchBox from './components/SearchBox';
-import AddFavourites from './components/AddFavourites';
-import RemoveFavourites from './components/RemoveFavourites';
 import FavouritesMovieList from './components/FavouritesMovieList';
 
 const App = () => {
@@ -45,17 +43,13 @@ const App = () => {
   };
 
   const addFavouriteMovie = (movie, userRating) => {
-    // Like, so so, dislike
     movie.userHighLevelRating = "Liked it";
     
-    // User rating
     movie.userRating = userRating;
-    console.log(movie.userRating);
 
     const newFavouriteList = [...favourites, movie];
     setFavourites(newFavouriteList);
     saveToLocalStorage(newFavouriteList);
-    console.log(localStorage.getItem('react-movie-app-favourites'));
   };
 
   const removeFavouriteMovie = (movie) => {
