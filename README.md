@@ -45,7 +45,7 @@ MovieRater utilizes the OMDb API to fetch movie and series data. You can obtain 
 
 ## Usage
 
-Explore, rate, and review movies and series directly from the app. Use the search functionality to find specific titles or discover new content. Sort the listings by the highest-rated to find the best of the best.
+Explore and rate movies and series directly from the app. Use the search functionality to find specific titles or discover new content. Sort the listings by the highest-rated to find the best of the best.
 
 ## License
 
