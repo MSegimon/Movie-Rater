@@ -43,12 +43,6 @@ To get started with MovieRater, follow these steps:
 
 MovieRater utilizes the OMDb API to fetch movie and series data. You can obtain your API key by visiting [OMDb API](https://www.omdbapi.com/) and following the registration process.
 
-## Installation
-
-1. Obtain your OMDb API key.
-2. Create a `.env` file in the project root and add your API key: `OMDB_API_KEY=your-api-key`
-3. Follow the [Getting Started](#getting-started) guide to set up the project.
-
 ## Usage
 
 Explore, rate, and review movies and series directly from the app. Use the search functionality to find specific titles or discover new content. Sort the listings by the highest-rated to find the best of the best.
