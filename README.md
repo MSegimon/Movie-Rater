@@ -2,6 +2,8 @@
 
 Welcome to MovieRater – Your Ultimate Movie and Series Database!
 
+Find me here: https://zerosimple.net/projects/movie_ratings/
+
 ## Table of Contents
 
 - [Introduction](#introduction)
