@@ -5,7 +5,7 @@ const RemoveFavourites = (props) => {
 
     return (
         <>
-            <span className='mr-2'>{movie.userHighLevelRating} - {movie.userRating}</span>
+            <span className='mr-2'>Rating: {movie.userRating}</span>
             <span className='m-2'></span>
             <svg
                 width='1em'

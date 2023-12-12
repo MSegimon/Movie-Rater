@@ -50,6 +50,30 @@ body {
 .modal-content {
   background-color: white;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 75%;
+}
+
+.poster-container {
+  flex-shrink: 1;
+}
+
+.add-favorite-container {
+  width: 300px;
+}
+
+.popup-heading {
+  color: black;
+  align-self: center;
+}
+
+.popup-input {
+  width: 100px;
+  align-self: center;
+}
+
+.popup-button {
+  width: 150px;
+  align-self: center;
 }

@@ -43,14 +43,26 @@ const App = () => {
   };
 
   const addFavouriteMovie = (movie, userRating) => {
-    movie.userHighLevelRating = "Liked it";
-    
     movie.userRating = userRating;
 
-    const newFavouriteList = [...favourites, movie];
+    const movieIndex = favourites.findIndex(item => item.imdbID === movie.imdbID);
+
+    let newFavouriteList = [];
+
+    if (movieIndex !== -1) {
+      newFavouriteList = [
+        ...favourites.slice(0, movieIndex),
+        movie,
+        ...favourites.slice(movieIndex + 1)
+      ];
+    } else {
+      newFavouriteList = [...favourites, movie];
+    }
+
     setFavourites(newFavouriteList);
     saveToLocalStorage(newFavouriteList);
   };
+
 
   const removeFavouriteMovie = (movie) => {
     const newFavouriteList = favourites.filter(
@@ -74,7 +86,7 @@ const App = () => {
         />
       </div>
       <div className='row d-flex align-items-center mt-4 mb-4'>
-        <MovieListHeading heading='Favourites' />
+        <MovieListHeading heading='My List' />
       </div>
       <div className='row'>
         <FavouritesMovieList
