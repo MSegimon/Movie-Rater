@@ -23,7 +23,7 @@ MovieRater is a web application developed using React.js that allows users to ex
 
 - **Rate and Review:** Share your thoughts by rating and reviewing movies and series directly from the app.
 
-- **Top Rated Sorting:** Explore the highest-rated movies and series, sorted in descending order for quick access to the best content.
+- **Top Rated Sorting:** Explore the highest-rated movies and series, sorted in descending order for quick access to your favorite content.
 
 ## Getting Started
 
